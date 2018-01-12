@@ -186,7 +186,7 @@ let offlineTimeoutDebounceTimer;
 window.addEventListener('online', (event) => {
   clearTimeout(offlineTimeoutDebounceTimer);
   if (!mapInitialized) {
-    initMap();
+    window.initMap();
   }
 });
 
@@ -195,7 +195,7 @@ window.addEventListener('offline', (event) => {
     console.log('offline');
     // TODO Set map to inactive
     if (!mapInitialized) {
-      initMap();
+      window.initMap();
     }
   }, offlineDebounce);
 });
