@@ -1,0 +1,17 @@
+{
+  "name": "restaurant-review-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "browser-sync": "^2.23.5",
+    "del": "^3.0.0",
+    "dotenv": "^4.0.0",
+    "gulp": "^3.9.1",
+    "gulp-changed": "^3.2.0",
+    "gulp-compile-handlebars": "^0.6.1",
+    "gulp-load-plugins": "^1.5.0",
+    "run-sequence": "^2.2.1",
+    "workbox-build": "^2.1.2"
+  }
+}
