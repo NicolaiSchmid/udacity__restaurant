@@ -24,33 +24,32 @@
     <section id="map-container">
       <div id="map"></div>
     </section>
+
     <section>
       <div class="filter-options">
         <h2>Filter Results</h2>
-
-        <div>
+        <div class="filter-container">
           <label for="neighborhoods-select">All Neighborhoods</label>
           <select label="Filter Neighborhoods" id="neighborhoods-select" class="filter-select" name="neighborhoods" onchange="updateRestaurants()">
             <option value="all">All Neighborhoods</option>
           </select>
         </div>
-
-        <div>
+        <div class="filter-container">
           <label for="cuisines-select">All Cuisines</label>
           <select label="Filter Cuisines" id="cuisines-select" class="filter-select" name="cuisines" onchange="updateRestaurants()">
             <option value="all">All Cuisines</option>
           </select>
         </div>
       </div>
+
       <ul id="restaurants-list"></ul>
 
-      <!-- TODO Focus -->
     </section>
   </main>
 
   <script type="application/javascript" charset="utf-8" src="js/dbhelper.js"></script>
   <script type="application/javascript" charset="utf-8" src="js/main.js"></script>
-  <script>
+  <!-- <script>
     if (navigator.serviceWorker) {
       navigator.serviceWorker.register('sw.js', {
         scope: '/',
@@ -59,9 +58,8 @@
       });
     }
 
-  </script>
+  </script> -->
   <script async defer src="https://maps.googleapis.com/maps/api/js?key={{ GOOGLE_APIKEY }}&libraries=places&callback=initMap"></script>
-
 
   <footer id="footer">
     Copyright (c) 2017
