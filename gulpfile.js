@@ -71,7 +71,7 @@ gulp.task('sw', () => {
         globPatterns: ['**\/*.{html,js,css,json,jpg}'],
         swDest: `dist/sw.js`,
         clientsClaim: true,
-        skipWaiting: true
+        skipWaiting: true,
     }).then(() => {
         console.info('Service worker generation completed.');
     }).catch((error) => {
