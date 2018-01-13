@@ -59,8 +59,7 @@ body {
   border: 2px solid #ccc;
   border-radius: 3px;
   font-family: Arial,sans-serif;
-  margin-right: 16px;
-  margin-bottom: 16px;
+  margin: 8px;
   min-height: 380px;
   padding: 8px;
   text-align: left;
