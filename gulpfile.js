@@ -72,6 +72,10 @@ gulp.task('sw', () => {
         swDest: `dist/sw.js`,
         clientsClaim: true,
         skipWaiting: true,
+        runtimeCaching: [{
+            urlPattern: /.*/,
+            handler: 'fastest',
+        }],
     }).then(() => {
         console.info('Service worker generation completed.');
     }).catch((error) => {

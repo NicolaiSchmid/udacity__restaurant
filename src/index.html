@@ -49,15 +49,7 @@
 
   <script type="application/javascript" charset="utf-8" src="js/dbhelper.js"></script>
   <script type="application/javascript" charset="utf-8" src="js/main.js"></script>
-  <script>
-    if (navigator.serviceWorker) {
-      navigator.serviceWorker.register('sw.js', {
-        scope: '/',
-      }).then(() => {
-        console.log('Service Worker registered');
-      });
-    }
-  </script>
+  <script type="application/javascript" charset="utf-8" src="js/registerServiceWorker.js"></script>
   <script async defer src="https://maps.googleapis.com/maps/api/js?key={{ GOOGLE_APIKEY }}&libraries=places&callback=initMap"></script>
 
   <footer id="footer">
